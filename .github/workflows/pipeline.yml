@@ -60,5 +60,3 @@ jobs:
         env:
           HF_TOKEN: ${{ secrets.HF_TOKEN }}
         run: python capstone_predictive_maintenance/hosting/hosting.py
-
-```

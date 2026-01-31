@@ -1,12 +1,13 @@
 from huggingface_hub.utils import RepositoryNotFoundError, HfHubHTTPError
 from huggingface_hub import HfApi, create_repo
+from google.colab import userdata
 import os
 
 repo_id = "sp1505/Predictive-Maintenance-Dataset"
 repo_type = "dataset"
 
 # Initialize API client
-api = HfApi(token=os.getenv("Predictive_Maintenance"))
+api = HfApi(token=hf_token)
 
 # Step 1: Check if the space exists
 try:

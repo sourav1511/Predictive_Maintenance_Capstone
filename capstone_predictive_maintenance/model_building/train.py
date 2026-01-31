@@ -26,7 +26,7 @@ print(f"Tracking URI: {mlflow.get_tracking_uri()}")
 api = HfApi()
 
 # Ensure login is performed before downloading
-login(token=hf_token)
+login(token=os.getenv("HF_TOKEN"))
 
 repo_id = "sp1505/Predictive-Maintenance-Dataset"
 

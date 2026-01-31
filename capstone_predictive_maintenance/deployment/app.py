@@ -15,7 +15,6 @@ Please enter the sensor and configuration data below to get a prediction.
 """)
 
 # User input
-Type = st.selectbox("Machine Type", ["H", "L", "M"])
 rpm = st.number_input("Engine rpm (K)")
 lub_oil_pressure = st.number_input("Lub oil pressure")
 fuel_pressure = st.number_input("Fuel pressure")

@@ -12,7 +12,7 @@ from huggingface_hub import login, HfApi
 
 api = HfApi(token=os.getenv("HF_TOKEN"))
 DATASET_PATH = "hf://datasets/sp1505/Predictive-Maintenance-Dataset/engine_data.csv"
-df = pd.read_csv(DATASET_PATH)
+data = pd.read_csv(DATASET_PATH)
 print("Dataset loaded successfully.")
 
 Y = data["Engine Condition"]
